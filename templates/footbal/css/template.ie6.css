@@ -1,0 +1,351 @@
+
+
+#style-page-background-glare{
+   display: none;
+}
+.cleared {
+   width:1px;
+}
+/* Start Box */
+.style-box, .style-box-body {
+   zoom:1;
+}
+/* End Box */
+/* Start Bar */
+.style-bar{
+   zoom:1;
+}
+/* End Bar */
+/* end Page */
+
+/* begin Header */
+.style-header {
+   zoom:expression(runtimeStyle.zoom=1,insertBefore(document.createElement('div'),firstChild).className='style-header-png');
+   z-index: 1;
+}
+
+.style-header-png
+{
+   position: absolute;
+   z-index:-2;
+   top: 0;
+   width:100%;
+   height: 225px;
+   background-image: url('../images/header.png');
+   background-repeat: no-repeat;
+   background-position:top center;
+}
+
+/* end Header */
+
+/* begin HeaderObject */
+div.style-headerobject{
+   font-size: 1px;
+}
+/* end HeaderObject */
+
+/* begin Menu */
+ul.style-hmenu, ul.style-hmenu ul, ul.style-hmenu li, ul.style-hmenu a {
+   zoom:1;
+}
+.style-hmenu li.style-hmenuhover{
+   z-index: 10000;
+}
+.style-hmenu .style-hmenuhoverUL{
+   visibility: visible;
+   top: 100%;
+   left: 0;
+}
+.style-hmenu .style-hmenuhoverUL .style-hmenuhoverUL{
+   top: 0;
+   left: 100%;
+}
+.style-hmenu ul li {
+   float: left !important;
+   clear: both;
+   width: 100%;
+}
+.style-nav
+{
+   zoom: 1;
+   height: 43px;
+   background:#1F2D1E;
+}
+
+/* end Menu */
+
+/* begin MenuItem */
+.style-hmenu a 
+{
+   display:inline-block;
+   color: #ADEBAF;
+   padding: 0 17px;
+   line-height: 27px;
+   text-align: center;
+}
+
+.style-hmenu a.active 
+{
+   color: #FFFFFF;
+   background-color:#326414;
+}
+
+.style-hmenu a:hover, .style-hmenuhoverA,  .style-hmenuhover a 
+{
+   color: #FFFFFF;
+   background-color:#224914;
+}
+
+/* end MenuItem */
+
+/* begin MenuSeparator */
+ul.style-hmenu li {
+   margin-left:expression(this.previousSibling==null?'0':'9px');
+}
+ul.style-hmenu li li{
+   margin-left:0;
+}
+
+span.style-hmenu-separator
+{
+   position:absolute;
+   display: block;
+   top:0;
+   left:  -9px;
+   width: 9px;
+   height: 27px;
+   background: url('../images/menuseparator.png') center center no-repeat;
+}
+/* end MenuSeparator */
+
+/* begin MenuSubItem */
+.style-hmenu ul a 
+{
+   color: #B9EEBB !important;
+   float: left;
+}
+
+.style-hmenu ul a:hover, .style-hmenu ul .style-hmenuhover .style-hmenuhoverA 
+{
+   color: #B9EEBB !important;
+   background-position: left bottom;
+   border-color: #071D07;
+   border-top-width: 1px !important;
+}
+
+/* end MenuSubItem */
+
+/* begin Box, Sheet */
+.style-sheet {
+   background:#848B84;
+}
+/* end Box, Sheet */
+
+/* begin Layout */
+.style-content-layout, .style-content-layout-row, .style-layout-cell 
+{
+   display: block;
+   zoom: 1;
+}
+.style-layout-cell
+{
+   position:relative;
+   float: left;
+   clear: right;
+}
+/* end Layout */
+
+/* begin Box, Block, VMenuBlock */
+.style-vmenublock {
+   background:#243023;
+}
+/* end Box, Block, VMenuBlock */
+
+/* begin BlockHeader, VMenuBlockHeader */
+.style-vmenublockheader {
+   background:#243023;
+}
+/* end BlockHeader, VMenuBlockHeader */
+
+/* begin Box, Box, VMenuBlockContent */
+.style-vmenublockcontent {
+   background:#243023;
+}
+
+/* end Box, Box, VMenuBlockContent */
+
+/* begin VMenuItem */
+ul.style-vmenu, ul.style-vmenu ul, ul.style-vmenu li, ul.style-vmenu a
+{
+   position:relative;
+   zoom: 1;
+}
+
+ul.style-vmenu li {
+   z-index:0;
+   margin-top:expression(this.previousSibling==null?'0':'4px');
+}
+ul.style-vmenu ul{
+   margin-top:4px;
+   padding-bottom: 0;
+}
+
+ul.style-vmenu a 
+{
+   color: #80EF67;
+   background-color:#243023;
+   padding: 0 11px 0 35px;
+   height: 27px;
+   line-height: 27px;
+}
+
+.style-vmenu a.active 
+{
+   color: #FFFFFF;
+   background-color:#202D1F;
+}
+
+ul.style-vmenu a:hover
+{
+   color: #FFFFFF;
+   background-color:#1B2A1A;
+}
+
+/* end VMenuItem */
+
+/* begin VMenuSubItem */
+ul.style-vmenu ul a {
+   color: #98E69B !important;
+}
+ul.style-vmenu li li {
+   padding-top:expression(this.previousSibling==null?'0':'0');
+   margin-top:expression(this.previousSibling==null?'0':'0');
+}
+ 
+ul.style-vmenu ul ul {
+   margin-top:0;
+}
+ul.style-vmenu ul a.active {
+   color: #63B715 !important;
+}
+ul.style-vmenu ul a:hover {
+   color: #B3EF7B !important;
+}	
+/* end VMenuSubItem */
+
+/* begin Box, Block */
+.style-block {
+   background:#374536;
+}
+/* end Box, Block */
+
+/* begin BlockHeader */
+.style-blockheader {
+   background:#374536;
+}
+/* end BlockHeader */
+
+/* begin Box, BlockContent */
+.style-blockcontent {
+   background:#374536;
+}
+.style-blockcontent-body ul li{
+   height: 1%;
+}
+
+/* end Box, BlockContent */
+
+/* begin Button */
+.style-button-wrapper{
+   zoom: 1;
+}
+.style-button-wrapper .style-button-l, .style-button-wrapper .style-button-r {
+   display: none;
+}
+.style-button-wrapper .style-button {
+   float: left;
+}
+/* end Button */
+
+/* begin Box, Post */
+.style-post {
+   background:#848B84;
+}
+/* end Box, Post */
+
+/* begin PostIcons, PostHeaderIcons */
+.style-postheadericons span{
+   zoom: 1;
+}
+/* end PostIcons, PostHeaderIcons */
+
+/* begin PostBullets */
+.style-post ul li, .style-post ol ul li
+{
+   height: 1%;
+   padding-left: 16px;
+   /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+   overflow-y: hidden;
+}
+
+.style-post ul ol li
+{
+   background: none;
+   padding-left: 0;
+   /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+/* end PostBullets */
+
+/* begin Footer */
+.style-footer-body{
+   padding-right: 0;
+   zoom:1;
+}
+.style-footer{
+   zoom:1;
+   background:#536353;
+}
+
+.style-footer-text
+{
+   height: 31px;
+}
+
+.style-rss-tag-icon
+{
+   zoom: 1;
+   font-size: 1px;
+}
+
+/* end Footer */
+
+/* begin LayoutCell, sidebar1 */
+.style-sidebar1 {
+   background:#243023;
+}/* end LayoutCell, sidebar1 */
+
+/* begin LayoutCell, content */
+.style-sidebar2 {
+   width: auto;
+   background:#243023;
+}
+/* end LayoutCell, content */
+
+/* begin LayoutCell, sidebar2 */
+/* end LayoutCell, sidebar2 */
+
+form#form-login ul li
+{
+   behavior: expression(this.runtimeStyle.filter?'':this.runtimeStyle.filter="");
+}
+
+/* Plugin compatilibity. */
+
+/* 150675, googlemap */
+div.map img
+{
+   behavior: none;
+   filter: none;
+}
