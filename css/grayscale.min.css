@@ -57,7 +57,7 @@ p {
     }
 }
 a {
-    color: #42DCA3;
+    color:#00a707;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
@@ -65,7 +65,7 @@ a {
 a:focus,
 a:hover {
     text-decoration: none;
-    color: #1d9b6c
+    color: #fff
 }
 .light {
     font-weight: 400
@@ -234,7 +234,7 @@ a:hover {
     height: auto;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-br.png) top center no-repeat #005A04;
+    background: url(../img/Senzanome.png) top center no-repeat #005A04;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
