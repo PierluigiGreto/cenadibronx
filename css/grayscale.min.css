@@ -7,11 +7,11 @@
 body,
 html {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 .navbar-custom,
 body {
-    background-color: #005A04
+    background-color: #005A04;
 }
 .intro,
 body,
@@ -334,3 +334,4 @@ img::selection {
 img::-moz-selection {
     background: 0 0
 }
+
